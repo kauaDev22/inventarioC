@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="app">
+    <br />
+    <BarraNav />
+    <tabela-monitores />
+    <p></p>
+    <tabela-computadores />
+
+    <tabela-diversos />
+
+    <br />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import BarraNav from "./components/BarraNav.vue";
+import TabelaComputadores from "./components/TabelaComputadores.vue";
+import TabelaDiversos from "./components/TabelaDiversos.vue";
+import TabelaMonitores from "./components/TabelaMonitores.vue";
 
 export default {
-  name: "App",
   components: {
-    HelloWorld,
+    BarraNav,
+    TabelaComputadores,
+    TabelaMonitores,
+    TabelaDiversos,
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
